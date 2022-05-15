@@ -5,10 +5,12 @@ import { titles } from '../GlobalStyles';
 import { GoCloudDownload } from 'react-icons/go';
 import { LinkButton } from './LinkButton';
 const StyledAbout = styled.section`
+  padding: 30px 0;
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+
   .intro__title {
     margin-bottom: 20px;
     h1 {
@@ -64,7 +66,7 @@ const StyledAbout = styled.section`
 
 function AboutMe() {
   return (
-    <StyledAbout>
+    <StyledAbout id='about'>
       <div className='intro__title'>
         <h1>About Me</h1>
         <p>My Introduction</p>

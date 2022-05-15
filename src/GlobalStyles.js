@@ -35,9 +35,14 @@ const GlobalStyles = createGlobalStyle`
     font-family: ${texts};
     font-weight: 500;
     overflow-x: hidden;
+    scroll-behavior: smooth;
   }
   body{
     background-color: ${(props) => props.theme.backgroundColor};
+    section[id]{
+      scroll-margin-top: 50px;
+      
+    }
   }
 `;
 

@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { titles } from '../GlobalStyles';
 import { LinkButton } from './LinkButton';
 const StyledIntro = styled.section`
-  //margin-top: 50px;
+  padding: 30px 0;
   display: flex;
   flex-direction: column;
   align-items: center;

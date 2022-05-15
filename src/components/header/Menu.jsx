@@ -65,36 +65,36 @@ const StyledMenuDesktop = styled(StyledMenu)`
     }
   }
 `;
-function Menu({ device }) {
+function Menu({ device, toggleMenu }) {
   if (device === 'mobile') {
     return (
       <StyledMenu>
         <ul>
-          <li>
+          <li onClick={() => toggleMenu(false)}>
             <a href='#home'>
               <GoHome />
               Home
             </a>
           </li>
-          <li>
+          <li onClick={() => toggleMenu(false)}>
             <a href='#about'>
               <IoPersonOutline />
               About
             </a>
           </li>
-          <li>
+          <li onClick={() => toggleMenu(false)}>
             <a href='#skills'>
               <GoFile />
               Skills
             </a>
           </li>
-          <li>
+          <li onClick={() => toggleMenu(false)}>
             <a href='#portfolio'>
               <GoRepo />
               Portfolio
             </a>
           </li>
-          <li>
+          <li onClick={() => toggleMenu(false)}>
             <a href='#contact'>
               <GoMail />
               Contact me

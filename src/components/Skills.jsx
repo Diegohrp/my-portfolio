@@ -6,7 +6,7 @@ const StyledSkills = styled.section`
 `;
 function Skills() {
   return (
-    <StyledSkills>
+    <StyledSkills id='skills'>
       <h1>Skills</h1>
     </StyledSkills>
   );

@@ -7,7 +7,8 @@ import { titles } from '../../GlobalStyles';
 const StyledHeader = styled.header`
   z-index: 10;
   display: flex;
-  position: fixed;
+  position: sticky;
+  top: 0;
   width: 100vw;
   height: 50px;
   align-items: center;
@@ -90,7 +91,7 @@ function Header({ onToggleTheme, themeIcon }) {
         </button>
       </div>
 
-      {menu && <Menu device='mobile' />}
+      {menu && <Menu device='mobile' toggleMenu={toggleMenu} />}
     </StyledHeader>
   );
 }
