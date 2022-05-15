@@ -42,7 +42,6 @@ const StyledIntro = styled.section`
       color: ${(props) => props.theme.textColor};
       text-align: justify;
       margin-bottom: 5px;
-      font-style: italic;
     }
   }
   @media (min-width: 700px) {

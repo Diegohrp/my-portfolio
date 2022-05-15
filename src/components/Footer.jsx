@@ -7,7 +7,13 @@ const StyledFooter = styled.footer`
 `;
 
 function Footer() {
-  return <StyledFooter>Footer</StyledFooter>;
+  return (
+    <StyledFooter>
+      <a href='https://iconscout.com/contributors/icon-mafia'>
+        Icon by Icon Mafia
+      </a>
+    </StyledFooter>
+  );
 }
 
 export { Footer };

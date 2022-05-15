@@ -42,7 +42,6 @@ const StyledAbout = styled.section`
       font-size: 1.6rem;
       text-align: justify;
       color: ${(props) => props.theme.textColor};
-      font-style: italic;
       margin-bottom: 5px;
     }
   }
