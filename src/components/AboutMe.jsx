@@ -60,7 +60,6 @@ const StyledAbout = styled.section`
       justify-self: flex-end;
     }
   }
-  background-color: ${(props) => props.theme.menuColor};
 `;
 
 function AboutMe() {

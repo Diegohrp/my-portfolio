@@ -26,6 +26,7 @@ const mySkills = [
 const StyledSkills = styled.section`
   width: 100vw;
   padding-bottom: 50px;
+  background-color: ${(props) => props.theme.menuColor};
   h1 {
     margin: 30px 0;
     font-size: 3rem;

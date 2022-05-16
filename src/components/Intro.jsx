@@ -8,7 +8,7 @@ const StyledIntro = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  background-color: ${(props) => props.theme.menuColor};
   figure {
     position: relative;
     svg {

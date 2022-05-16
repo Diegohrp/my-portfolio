@@ -6,6 +6,7 @@ import { Layout } from './Layout';
 import { Intro } from '../components/Intro';
 import { AboutMe } from '../components/AboutMe';
 import { Skills } from '../components/Skills';
+import { Portfolio } from '../components/Portfolio';
 function App() {
   const [theme, setTheme] = React.useState(themeMode.light);
   const toggleTheme = () => {
@@ -20,6 +21,7 @@ function App() {
         <Intro />
         <AboutMe />
         <Skills />
+        <Portfolio />
       </Layout>
     </ThemeProvider>
   );

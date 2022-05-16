@@ -4,7 +4,7 @@ const titles = 'Poppins, sans-serif';
 const texts = 'Raleway, sans-serif';
 const themeMode = {
   light: {
-    primaryColor: '#04c2c9',
+    scrollColor: '#a9def1',
     backgroundColor: '#fafafd', //'#f5f5f5',
     titleColor: '#444649',
     textColor: '#616161',
@@ -13,7 +13,7 @@ const themeMode = {
     icon: 'light',
   },
   dark: {
-    primaryColor: '#14253d',
+    scrollColor: '#cdfbfd',
     backgroundColor: '#0d192b', //'#f5f5f5',
     titleColor: '#eff3f8',
     textColor: '#8bacda',
