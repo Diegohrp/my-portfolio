@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import profile from '../assets/img/perfil.jpg';
 import { titles } from '../GlobalStyles';
 import { GoCloudDownload } from 'react-icons/go';
 import { LinkButton } from './LinkButton';
@@ -33,11 +32,12 @@ const StyledAbout = styled.section`
     border-radius: 20px;
   }
   div {
-    width: 300px;
+    width: min(80%, 350px);
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+    text-align: left;
     p {
       font-size: 1.6rem;
       text-align: justify;
@@ -45,7 +45,7 @@ const StyledAbout = styled.section`
       margin-bottom: 5px;
     }
   }
-  @media (min-width: 700px) {
+  /* @media (min-width: 700px) {
     display: grid;
     grid-template: 80px 1fr / repeat(2, 1fr);
     align-items: center;
@@ -59,7 +59,7 @@ const StyledAbout = styled.section`
       height: 200px;
       justify-self: flex-end;
     }
-  }
+  } */
 `;
 
 function AboutMe() {
@@ -69,16 +69,22 @@ function AboutMe() {
         <h1>About Me</h1>
         <p>My Introduction</p>
       </div>
-      <img src={profile} alt='about me' />
+      {/* <img src={profile} alt='about me' /> */}
       <div>
         <p>
-          I'm a Front-end developer in Mexico who is looking for a remote job.
+          I'm a Front-end developer in Mexico who is looking for a
+          remote job.
         </p>
         <p>I'm also a mechatronics engineer student.</p>
         <p>
-          I enjoy learning about anything related to programming and technology,
+          I enjoy learning about anything related to programming and
+          technology,
         </p>
-        <LinkButton href='/' text='Download CV' icon={<GoCloudDownload />} />
+        <LinkButton
+          href='/'
+          text='Download CV'
+          icon={<GoCloudDownload />}
+        />
       </div>
     </StyledAbout>
   );
