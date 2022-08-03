@@ -23,9 +23,10 @@ const StyledPortFolio = styled.section`
     scroll-snap-type: x proximity;
     scroll-margin-inline: center;
     align-items: center;
-    height: 400px;
-    width: 300px;
+    height: 500px;
+    width: 100%;
     margin-bottom: 20px;
+    padding-right: 0 20px;
     &::-webkit-scrollbar {
       background-color: ${(props) => props.theme.scrollColor};
       height: 3px;
@@ -38,9 +39,9 @@ const StyledPortFolio = styled.section`
       display: flex;
       flex-direction: column;
       background-color: ${(props) => props.theme.menuColor};
-      min-width: 230px;
-      height: 350px;
-      margin-left: 20px;
+      min-width: 90%;
+      height: 400px;
+      margin-left: 30px;
       padding: 0 15px;
       display: flex;
       align-items: center;
@@ -66,8 +67,7 @@ const StyledPortFolio = styled.section`
           font-size: 1.4rem;
           text-align: left;
           padding: 0 10px;
-          height: 80px;
-          overflow-y: scroll;
+
           color: ${(props) => props.theme.textColor};
         }
         div {
