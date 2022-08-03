@@ -53,7 +53,7 @@ const StyledFooter = styled.footer`
 
 function Footer() {
   return (
-    <StyledFooter>
+    <StyledFooter id='contact'>
       <ul>
         <li>
           <a href='https://www.linkedin.com/in/diego-herrera-prado-280867161/'>

@@ -211,11 +211,13 @@ function Portfolio() {
                   href={project?.repo}
                   text='Go Repo'
                   icon={<GoMarkGithub />}
+                  target='_blank'
                 />
                 <LinkButton
                   text='Visit site'
                   icon={<GoLinkExternal />}
                   href={project?.site}
+                  target='_blank'
                 />
               </div>
             </div>
