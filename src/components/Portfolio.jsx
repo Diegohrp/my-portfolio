@@ -66,6 +66,8 @@ const StyledPortFolio = styled.section`
           font-size: 1.4rem;
           text-align: left;
           padding: 0 10px;
+          height: 80px;
+          overflow-y: scroll;
           color: ${(props) => props.theme.textColor};
         }
         div {
