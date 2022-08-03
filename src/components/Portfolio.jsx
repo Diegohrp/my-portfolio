@@ -26,7 +26,7 @@ const StyledPortFolio = styled.section`
     height: 500px;
     width: 100%;
     margin-bottom: 20px;
-    padding-right: 0 20px;
+    padding: 0 20px;
     &::-webkit-scrollbar {
       background-color: ${(props) => props.theme.scrollColor};
       height: 3px;
