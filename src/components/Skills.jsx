@@ -25,10 +25,9 @@ const mySkills = [
 
 const StyledSkills = styled.section`
   width: 100vw;
-  padding-bottom: 50px;
+  padding: 40px 0;
   background-color: ${(props) => props.theme.menuColor};
   h1 {
-    margin: 30px 0;
     font-size: 3rem;
     font-weight: 700;
     font-family: ${titles};
@@ -37,7 +36,9 @@ const StyledSkills = styled.section`
   }
   .skills {
     display: grid;
-    grid-template-columns: repeat(2, 150px);
+
+    padding: 0 30px;
+    grid-template-columns: repeat(auto-fill, 150px);
     justify-content: center;
     justify-items: center;
     row-gap: 40px;
@@ -104,11 +105,14 @@ const StyledSkills = styled.section`
       z-index: 1;
     }
   }
-
-  @media (min-width: 700px) {
+  @media (min-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     .skills {
-      grid-template-columns: repeat(5, 150px);
-      column-gap: 40px;
+      width: 80%;
+      column-gap: 30px;
+      justify-self: center;
     }
   }
 `;

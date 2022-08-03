@@ -6,7 +6,6 @@ const StyledPortFolio = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-
   h1 {
     margin-top: 30px;
     font-size: 3rem;
@@ -43,7 +42,7 @@ const StyledPortFolio = styled.section`
       justify-content: space-evenly;
       text-align: center;
       border-radius: 15px;
-      box-shadow: 0 4px 8px rgb(89 73 30 / 16%);
+      box-shadow: rgb(0 0 0 / 75%) 6px 6px 6px 0px;
       scroll-snap-align: center;
       img {
         margin: 25px 0 10px 0;
@@ -78,11 +77,12 @@ const StyledPortFolio = styled.section`
   }
   @media (min-width: 700px) {
     .projects {
-      margin: 30px 0 50px 0;
+      padding: 30px 50px 50px 50px;
+      margin: 0;
       width: 100%;
       height: auto;
       display: grid;
-      grid-template-columns: repeat(3, 300px);
+      grid-template-columns: repeat(auto-fill, 300px);
       place-content: center;
       gap: 25px;
       .project {
@@ -90,9 +90,49 @@ const StyledPortFolio = styled.section`
         height: 300px;
         margin-left: 0;
         padding: 0;
+        cursor: pointer;
+        position: relative;
+
+        @keyframes showUp {
+          25% {
+            visibility: visible;
+            opacity: 0.4;
+          }
+          50% {
+            opacity: 0.6;
+          }
+          75% {
+            height: 300px;
+            opacity: 0.8;
+            transform: translateY(0px);
+          }
+          100% {
+            height: 300px;
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0px);
+          }
+        }
+
+        &:hover .project__info {
+          animation: showUp 700ms ease-in;
+          animation-fill-mode: forwards;
+        }
 
         &__info {
-          display: none;
+          padding: 0 20px;
+          position: absolute;
+          width: 300px;
+          height: 150px;
+          transform: translateY(-150px);
+          visibility: hidden;
+          opacity: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+          background-color: ${(props) => props.theme.menuColor};
+          border-radius: 15px;
         }
         img {
           width: 300px;
@@ -148,7 +188,10 @@ function Portfolio() {
               <p>{project.desc}</p>
               <div>
                 <LinkButton text='Go Repo' icon={<GoMarkGithub />} />
-                <LinkButton text='Visit site' icon={<GoLinkExternal />} />
+                <LinkButton
+                  text='Visit site'
+                  icon={<GoLinkExternal />}
+                />
               </div>
             </div>
           </article>

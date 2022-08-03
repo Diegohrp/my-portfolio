@@ -10,6 +10,7 @@ const themeMode = {
     textColor: '#616161',
     accentColor: '#00A5E0', //'#e31b6d' (magenta),
     menuColor: '#f2f5f5', //'#dfdee2',
+    footerColor: '#e2deff',
     icon: 'light',
   },
   dark: {
@@ -19,6 +20,7 @@ const themeMode = {
     textColor: '#8bacda',
     accentColor: '#04c2c9', //'#00fff7',
     menuColor: '#14253d',
+    footerColor: '#12111a',
     icon: 'dark',
   },
 };
