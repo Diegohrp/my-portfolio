@@ -28,7 +28,7 @@ const StyledButton = styled.a`
 
 function LinkButton({ href, icon, text }) {
   return (
-    <StyledButton href={href}>
+    <StyledButton target='_blank' href={href}>
       {text}
       {icon}
     </StyledButton>

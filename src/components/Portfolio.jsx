@@ -1,7 +1,12 @@
 import styled from 'styled-components';
 import { GoMarkGithub, GoLinkExternal } from 'react-icons/go';
 import { LinkButton } from '../components/LinkButton';
-import projectImg from '../assets/img/project.jpg';
+import weatherAppImg from '../assets/img/weatherApp.png';
+import TodoAppImg from '../assets/img/ToDoApp.PNG';
+import PokedexImg from '../assets/img/Pokedex.PNG';
+import CatImg from '../assets/img/CatchCat.PNG';
+import wordleImg from '../assets/img/Wordle.PNG';
+import TimerImg from '../assets/img/Timer.PNG';
 const StyledPortFolio = styled.section`
   display: flex;
   flex-direction: column;
@@ -49,6 +54,7 @@ const StyledPortFolio = styled.section`
         width: 190px;
         min-height: 150px;
         border-radius: 15px;
+        object-fit: contain;
       }
       &__info {
         h2 {
@@ -89,7 +95,7 @@ const StyledPortFolio = styled.section`
         width: 300px;
         height: 300px;
         margin-left: 0;
-        padding: 0;
+        padding: 10px 0;
         cursor: pointer;
         position: relative;
 
@@ -135,10 +141,10 @@ const StyledPortFolio = styled.section`
           border-radius: 15px;
         }
         img {
-          width: 300px;
+          width: 200px;
           height: 300px;
           margin: 0;
-          object-fit: cover;
+          object-fit: fill;
         }
       }
     }
@@ -148,32 +154,46 @@ const StyledPortFolio = styled.section`
 function Portfolio() {
   const portfolio = [
     {
-      name: 'Batatabit Landing',
-      desc: 'A landing page for the branch Batatabit, coded with HTML and CSS using the design methodology mobile first.',
-      img: '',
-      repo: '',
-      site: '',
+      name: 'Weather App',
+      desc: 'App to consult weather data from your location or form any city you want. Coded using React.js and styled components',
+      img: weatherAppImg,
+      repo: 'https://github.com/Diegohrp/weather-app',
+      site: 'https://weather-app-nine-nu.vercel.app/',
     },
     {
-      name: 'Batatabit Landing2',
-      desc: 'A landing page for the branch Batatabit, coded with HTML and CSS using the design methodology mobile first.',
-      img: '',
-      repo: '',
-      site: '',
+      name: 'ToDo App',
+      desc: 'TODO app created with React.js and styled components. You can add, delete, search and check your daily tasks.',
+      img: TodoAppImg,
+      repo: 'https://github.com/Diegohrp/todo_app',
+      site: 'https://diegohrp.github.io/todo_app/',
     },
     {
-      name: 'Batatabit Landing3',
-      desc: 'A landing page for the branch Batatabit, coded with HTML and CSS using the design methodology mobile first.',
-      img: '',
-      repo: '',
-      site: '',
+      name: 'Pokedex',
+      desc: 'Consumption of the REST API "PokeAPI" to get information of different pokemon. Coded with HTML, CSS and JavaScript.',
+      img: PokedexImg,
+      repo: 'https://github.com/Diegohrp/pokedex',
+      site: 'https://diegohrp.github.io/pokedex/',
     },
     {
-      name: 'Batatabit Landing4',
-      desc: 'A landing page for the branch Batatabit, coded with HTML and CSS using the design methodology mobile first.',
-      img: '',
-      repo: '',
-      site: '',
+      name: 'Random Cat',
+      desc: 'Example of the consumption of an API REST using "The Cat API". Coded using HTML, CSS and JavaScript',
+      img: CatImg,
+      repo: 'https://github.com/Diegohrp/Random-cat',
+      site: 'https://diegohrp.github.io/Random-cat/',
+    },
+    {
+      name: 'Wordle game',
+      desc: 'Wordle game using HTML, CSS and JavaScript, try to guess the word an complete all levels',
+      img: wordleImg,
+      repo: 'https://github.com/Diegohrp/wordle',
+      site: 'https://diegohrp.github.io/wordle/',
+    },
+    {
+      name: 'Timer',
+      desc: 'A timer, countdown and pomodoro all in one, use it to manage your time. Coded using HTML, CSS and JavaScript',
+      img: TimerImg,
+      repo: 'https://github.com/Diegohrp/timer',
+      site: 'https://diegohrp.github.io/timer/',
     },
   ];
   return (
@@ -182,15 +202,20 @@ function Portfolio() {
       <div className='projects'>
         {portfolio.map((project) => (
           <article className='project' key={project.name}>
-            <img src={projectImg} alt='' />
+            <img src={project.img} alt='' />
             <div className='project__info'>
               <h2>{project.name}</h2>
               <p>{project.desc}</p>
               <div>
-                <LinkButton text='Go Repo' icon={<GoMarkGithub />} />
+                <LinkButton
+                  href={project?.repo}
+                  text='Go Repo'
+                  icon={<GoMarkGithub />}
+                />
                 <LinkButton
                   text='Visit site'
                   icon={<GoLinkExternal />}
+                  href={project?.site}
                 />
               </div>
             </div>
