@@ -64,7 +64,7 @@ const StyledPortFolio = styled.section`
         }
         p {
           font-size: 1.4rem;
-          text-align: justify;
+          text-align: left;
           padding: 0 10px;
           color: ${(props) => props.theme.textColor};
         }
