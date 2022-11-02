@@ -11,7 +11,7 @@ import { useThemeMode } from '../hooks/useTheme';
 
 function App() {
   const initialState =
-    JSON.parse(localStorage.getItem('theme')) || themeMode.light;
+    JSON.parse(localStorage.getItem('theme')) || themeMode.dark;
 
   const [theme, toggleTheme] = useThemeMode(initialState);
 

@@ -7,6 +7,7 @@ import PokedexImg from '../assets/img/Pokedex.PNG';
 import CatImg from '../assets/img/CatchCat.PNG';
 import wordleImg from '../assets/img/Wordle.PNG';
 import TimerImg from '../assets/img/Timer.PNG';
+import easybankImg from '../assets/img/easybank.JPG';
 const StyledPortFolio = styled.section`
   display: flex;
   flex-direction: column;
@@ -157,7 +158,7 @@ function Portfolio() {
   const portfolio = [
     {
       name: 'Weather App',
-      desc: 'App to consult weather data from your location or form any city you want. Coded using React.js and styled components',
+      desc: 'App to consult weather data from your location or form any city you want. Coded using React.js and styled components.',
       img: weatherAppImg,
       repo: 'https://github.com/Diegohrp/weather-app',
       site: 'https://weather-app-nine-nu.vercel.app/',
@@ -178,21 +179,28 @@ function Portfolio() {
     },
     {
       name: 'Random Cat',
-      desc: 'Example of the consumption of an API REST using "The Cat API". Coded using HTML, CSS and JavaScript',
+      desc: 'Example of the consumption of an API REST using "The Cat API". Coded using HTML, CSS and JavaScript.',
       img: CatImg,
       repo: 'https://github.com/Diegohrp/Random-cat',
       site: 'https://diegohrp.github.io/Random-cat/',
     },
     {
       name: 'Wordle game',
-      desc: 'Wordle game using HTML, CSS and JavaScript, try to guess the word an complete all levels',
+      desc: 'Wordle game using HTML, CSS and JavaScript, try to guess the word an complete all levels.',
       img: wordleImg,
       repo: 'https://github.com/Diegohrp/wordle',
       site: 'https://diegohrp.github.io/wordle/',
     },
     {
+      name: 'Easybank Landing page',
+      desc: 'Solution to Frontend Mentor Challenge "Easybank landing page". Coded using HTML, CSS and JavaScript.',
+      img: easybankImg,
+      repo: 'https://github.com/Diegohrp/Easybank-landing-page',
+      site: 'https://diegohrp.github.io/Easybank-landing-page/',
+    },
+    {
       name: 'Timer',
-      desc: 'A timer, countdown and pomodoro all in one, use it to manage your time. Coded using HTML, CSS and JavaScript',
+      desc: 'A timer, countdown and pomodoro all in one, use it to manage your time. Coded using HTML, CSS and JavaScript.',
       img: TimerImg,
       repo: 'https://github.com/Diegohrp/timer',
       site: 'https://diegohrp.github.io/timer/',
