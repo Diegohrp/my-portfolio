@@ -7,13 +7,14 @@ import { Intro } from '../components/Intro';
 import { AboutMe } from '../components/AboutMe';
 import { Skills } from '../components/Skills';
 import { Portfolio } from '../components/Portfolio';
+import { useThemeMode } from '../hooks/useTheme';
+
 function App() {
-  const [theme, setTheme] = React.useState(themeMode.light);
-  const toggleTheme = () => {
-    theme === themeMode.light
-      ? setTheme(themeMode.dark)
-      : setTheme(themeMode.light);
-  };
+  const initialState =
+    JSON.parse(localStorage.getItem('theme')) || themeMode.light;
+
+  const [theme, toggleTheme] = useThemeMode(initialState);
+
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
