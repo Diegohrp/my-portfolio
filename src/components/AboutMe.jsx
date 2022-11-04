@@ -81,7 +81,7 @@ function AboutMe() {
           technology,
         </p>
         <LinkButton
-          href='/'
+          href='https://drive.google.com/file/d/1CKIWXmN98L6bbGIieH4Sx-Z4M9C7LRat/view?usp=sharing'
           text='Download CV'
           icon={<GoCloudDownload />}
         />
