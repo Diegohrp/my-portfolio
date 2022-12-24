@@ -9,7 +9,7 @@ function useThemeMode(initialState) {
   };
 
   const toggleTheme = () => {
-    theme === themeMode.light
+    theme.icon === 'light'
       ? setTheme(themeMode.dark)
       : setTheme(themeMode.light);
   };
