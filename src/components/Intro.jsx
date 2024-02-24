@@ -21,11 +21,11 @@ const StyledIntro = styled.section`
       }
     }
     img {
-      width: 180px;
-      height: 170px;
+      width: 186px;
+      height: 180px;
       position: absolute;
-      top: calc(50% - 72px);
-      right: calc(50% - 105px);
+      top: calc(50% - 80px);
+      right: calc(50% - 104px);
       border-radius: 100%;
     }
   }
@@ -72,9 +72,7 @@ function Intro() {
   return (
     <StyledIntro id='home'>
       <figure>
-        <svg
-          viewBox='0 10 200 150'
-          xmlns='http://www.w3.org/2000/svg'>
+        <svg viewBox='0 10 200 150' xmlns='http://www.w3.org/2000/svg'>
           <path
             d='M69.9,-24.5C77.3,0,60.8,30.6,39.5,43.5C18.2,56.5,-8.1,51.8,-29.9,37C-51.7,22.1,-69.1,-3,-63.4,-25.3C-57.7,-47.6,-28.9,-67,1.2,-67.4C31.3,-67.8,62.5,-49.1,69.9,-24.5Z'
             transform='translate(100 100)'
@@ -90,14 +88,9 @@ function Intro() {
         <h1>Hi, I'm Diego</h1>
         <p>Front-end Developer</p>
         <p>
-          Two years of experience creating web apps with React.js and
-          Node.js
+          Two years of experience creating web apps with React.js and Node.js
         </p>
-        <LinkButton
-          href='#contact'
-          text='Contact me'
-          icon={<GoMail />}
-        />
+        <LinkButton href='#contact' text='Contact me' icon={<GoMail />} />
       </div>
     </StyledIntro>
   );
