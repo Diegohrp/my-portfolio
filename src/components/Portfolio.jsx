@@ -202,7 +202,7 @@ function Portfolio() {
       name: 'Hotel Management System',
       desc: 'A desktop application to make and manage hotel reservations. Coded using Java, JavaFx and CSS',
       img: hotelImg,
-      repo: 'https://github.com/Diegohrp/weather-app',
+      repo: 'https://github.com/Diegohrp/challenge-ONE-hotel',
       site: '',
     },
     {
