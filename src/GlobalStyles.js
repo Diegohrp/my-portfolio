@@ -41,6 +41,7 @@ const GlobalStyles = createGlobalStyle`
   }
   body{
     background-color: ${(props) => props.theme.backgroundColor};
+    transition: background-color 0.3s, border-color 0.3s;
     section[id]{
       scroll-margin-top: 50px;
       

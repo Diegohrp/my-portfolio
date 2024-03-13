@@ -5,6 +5,7 @@ import { SiGmail } from 'react-icons/si';
 
 const StyledFooter = styled.footer`
   width: 100%;
+  transition: background-color 0.3s, border-color 0.3s;
   background-color: ${(props) => props.theme.footerColor};
   color: ${(props) => props.theme.titleColor};
   font-size: 1.6rem;
@@ -72,7 +73,7 @@ function Footer() {
             <SiGmail className='icon' />
           </a>
 
-          <p>diego.blake11@gmail.com</p>
+          <p>diegohp.dev@gmail.com</p>
         </li>
       </ul>
       <a

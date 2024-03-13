@@ -4,6 +4,7 @@ import { titles } from '../GlobalStyles';
 import { GoCloudDownload } from 'react-icons/go';
 import { LinkButton } from './LinkButton';
 const StyledAbout = styled.section`
+  transition: background-color 0.3s, border-color 0.3s;
   padding: 30px 0;
   width: 100vw;
   display: flex;
@@ -72,16 +73,14 @@ function AboutMe() {
       {/* <img src={profile} alt='about me' /> */}
       <div>
         <p>
-          I'm a Front-end developer in Mexico who is looking for a
-          remote job.
+          I'm a Software developer in Mexico who is looking for a remote job.
         </p>
-        <p>I'm also a mechatronics engineer student.</p>
+        {/* <p>I'm also a mechatronics engineer student.</p> */}
         <p>
-          I enjoy learning about anything related to programming and
-          technology,
+          I enjoy learning about anything related to programming and technology,
         </p>
         <LinkButton
-          href='https://drive.google.com/file/d/1CKIWXmN98L6bbGIieH4Sx-Z4M9C7LRat/view?usp=sharing'
+          href='https://drive.google.com/file/d/1deawn9zvT4JrEjlXrukY1tAhIeun6vcb/view?usp=sharing'
           text='Download CV'
           icon={<GoCloudDownload />}
         />

@@ -9,7 +9,7 @@ const StyledIntro = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  transition: background-color 0.3s, border-color 0.3s;
   background-color: ${(props) => props.theme.menuColor};
   figure {
     position: relative;

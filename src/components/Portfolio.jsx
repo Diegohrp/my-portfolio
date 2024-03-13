@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 import { GoMarkGithub, GoLinkExternal } from 'react-icons/go';
 import { LinkButton } from '../components/LinkButton';
+import tweeterImg from '../assets/img/tweeter-clone.PNG';
+import mediCitaImg from '../assets/img/medicita.PNG';
+import whacImg from '../assets/img/whac-a-mole.PNG';
+import hotelImg from '../assets/img/hotel-management-system.PNG';
 import weatherAppImg from '../assets/img/weatherApp.png';
 import TodoAppImg from '../assets/img/ToDoApp.PNG';
 import PokedexImg from '../assets/img/Pokedex.PNG';
@@ -8,7 +12,9 @@ import CatImg from '../assets/img/CatchCat.PNG';
 import wordleImg from '../assets/img/Wordle.PNG';
 import TimerImg from '../assets/img/Timer.PNG';
 import easybankImg from '../assets/img/easybank.JPG';
+import batatabitImg from '../assets/img/batatabit.PNG';
 const StyledPortFolio = styled.section`
+  transition: background-color 0.3s, border-color 0.3s;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,12 +54,12 @@ const StyledPortFolio = styled.section`
       align-items: center;
       justify-content: space-evenly;
       text-align: center;
-      border-radius: 15px;
-      box-shadow: rgb(0 0 0 / 75%) 6px 6px 6px 0px;
+      border-radius: 10px;
+      box-shadow: rgb(0 0 0 / 35%) 3px 3px 3px 0px;
       scroll-snap-align: center;
       img {
         margin: 25px 0 10px 0;
-        width: 190px;
+        width: 290px;
         min-height: 150px;
         border-radius: 15px;
         object-fit: contain;
@@ -144,10 +150,10 @@ const StyledPortFolio = styled.section`
           border-radius: 15px;
         }
         img {
-          width: 200px;
+          width: 250px;
           height: 300px;
           margin: 0;
-          object-fit: fill;
+          object-fit: contain;
         }
       }
     }
@@ -156,6 +162,20 @@ const StyledPortFolio = styled.section`
 
 function Portfolio() {
   const portfolio = [
+    {
+      name: 'Tweeter-Twitter Clone',
+      desc: "Full-Stack Web application called Tweeter that replicates some of Twitter's core functionalities. Built using React.js, Styled-components, Express.js, MySQL and Cloudinary. Default user: miguel@eaglefang.com, password: 12345678",
+      img: tweeterImg,
+      repo: 'https://github.com/Diegohrp/tweeter-frontend',
+      site: 'https://tubular-syrniki-a4621a.netlify.app/home',
+    },
+    {
+      name: 'MediCita',
+      desc: 'Web Application to schedule medical appointments. Coded using React.js and TailwindCSS. Default user: user@mail.com, password: #Hulkeate19',
+      img: mediCitaImg,
+      repo: '',
+      site: 'https://medicita.vercel.app/',
+    },
     {
       name: 'Weather App',
       desc: 'App to consult weather data from your location or form any city you want. Coded using React.js and styled components.',
@@ -171,25 +191,19 @@ function Portfolio() {
       site: 'https://diegohrp.github.io/todo_app/',
     },
     {
-      name: 'Pokedex',
-      desc: 'Consumption of the REST API "PokeAPI" to get information of different pokemon. Coded with HTML, CSS and JavaScript.',
-      img: PokedexImg,
-      repo: 'https://github.com/Diegohrp/pokedex',
-      site: 'https://diegohrp.github.io/pokedex/',
+      name: 'Whac-A-Mole',
+      desc: 'Whack-a-mole game, coded using HTML and CSS. The characters and scenario are drawn and animated using pure CSS',
+      img: whacImg,
+      repo: 'https://github.com/Diegohrp/animationCSS',
+      site: 'https://diegohrp.github.io/animationCSS/',
     },
+
     {
-      name: 'Random Cat',
-      desc: 'Example of the consumption of an API REST using "The Cat API". Coded using HTML, CSS and JavaScript.',
-      img: CatImg,
-      repo: 'https://github.com/Diegohrp/Random-cat',
-      site: 'https://diegohrp.github.io/Random-cat/',
-    },
-    {
-      name: 'Wordle game',
-      desc: 'Wordle game using HTML, CSS and JavaScript, try to guess the word an complete all levels.',
-      img: wordleImg,
-      repo: 'https://github.com/Diegohrp/wordle',
-      site: 'https://diegohrp.github.io/wordle/',
+      name: 'Hotel Management System',
+      desc: 'A desktop application to make and manage hotel reservations. Coded using Java, JavaFx and CSS',
+      img: hotelImg,
+      repo: 'https://github.com/Diegohrp/weather-app',
+      site: '',
     },
     {
       name: 'Easybank Landing page',
@@ -198,6 +212,36 @@ function Portfolio() {
       repo: 'https://github.com/Diegohrp/Easybank-landing-page',
       site: 'https://diegohrp.github.io/Easybank-landing-page/',
     },
+    {
+      name: 'Batatabit Landing page',
+      desc: 'Landing page coded using HTML, CSS and JavaScript.',
+      img: batatabitImg,
+      repo: 'https://github.com/Diegohrp/landing-page_batatabit',
+      site: 'https://diegohrp.github.io/landing-page_batatabit/',
+    },
+    {
+      name: 'Pokedex',
+      desc: 'Consumption of the REST API "PokeAPI" to get information of different pokemon. Coded with HTML, CSS and JavaScript.',
+      img: PokedexImg,
+      repo: 'https://github.com/Diegohrp/pokedex',
+      site: 'https://diegohrp.github.io/pokedex/',
+    },
+
+    /*  {
+      name: 'Random Cat',
+      desc: 'Example of the consumption of an API REST using "The Cat API". Coded using HTML, CSS and JavaScript.',
+      img: CatImg,
+      repo: 'https://github.com/Diegohrp/Random-cat',
+      site: 'https://diegohrp.github.io/Random-cat/',
+    }, */
+    {
+      name: 'Wordle game',
+      desc: 'Wordle game using HTML, CSS and JavaScript, try to guess the word an complete all levels.',
+      img: wordleImg,
+      repo: 'https://github.com/Diegohrp/wordle',
+      site: 'https://diegohrp.github.io/wordle/',
+    },
+
     {
       name: 'Timer',
       desc: 'A timer, countdown and pomodoro all in one, use it to manage your time. Coded using HTML, CSS and JavaScript.',
@@ -217,18 +261,22 @@ function Portfolio() {
               <h2>{project.name}</h2>
               <p>{project.desc}</p>
               <div>
-                <LinkButton
-                  href={project?.repo}
-                  text='Go Repo'
-                  icon={<GoMarkGithub />}
-                  target='_blank'
-                />
-                <LinkButton
-                  text='Visit site'
-                  icon={<GoLinkExternal />}
-                  href={project?.site}
-                  target='_blank'
-                />
+                {project?.repo && (
+                  <LinkButton
+                    href={project.repo}
+                    text='Go Repo'
+                    icon={<GoMarkGithub />}
+                    target='_blank'
+                  />
+                )}
+                {project?.site && (
+                  <LinkButton
+                    text='Visit site'
+                    icon={<GoLinkExternal />}
+                    href={project?.site}
+                    target='_blank'
+                  />
+                )}
               </div>
             </div>
           </article>
